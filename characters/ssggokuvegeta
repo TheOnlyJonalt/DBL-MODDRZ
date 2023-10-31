@@ -1,1 +1,113 @@
-
+  {
+    "name": "Super Saiyan God SS Goku &amp; Vegeta",
+    "id": "DBL41-01S",
+    "color": "PUR",
+    "rarity": "SPARKING",
+    "tags": [
+      "Son Family",
+      "Vegeta Clan",
+      "Saiyan",
+      "God Ki",
+      "Super Saiyan God SS",
+      "Goku or Vegeta (excluding some)",
+      "Male",
+      "SPARKING",
+      "Melee Type",
+      "PUR",
+      "Sagas From the Movies",
+      "Goku",
+      "Vegeta",
+      "DBL41-01S",
+      "Cover Change",
+      "Revive Disruption",
+      "Special Cover Change (Strike)",
+      "Special Cover Change (Blast)",
+      "Special Cover Change Nullification",
+      "Reverse Element Factors",
+      "Tag"
+    ],
+    "main_ability": {
+      "name": "What the hell are you waiting for?",
+      "effect": "Tag Switch to \"Vegeta\".Reverses own Element factors.Restores own health by 15% and Ki by 30.Increases own Arts Card Draw Speed by 1 level for 15 timer counts.+10% to Special Move damage inflicted (cannot be cancelled).Requirements: Max Switch Gauge."
+    },
+    "unique_ability": {
+      "unique_start_abilities": [
+        {
+          "ability_name": "Azure Guardians",
+          "ability_effect": "Applies the following effects to self when battle starts or when this character enters the battlefield via Tag Switch:+90% to damage inflicted (cannot be cancelled).+50% to Strike damage inflicted (cannot be cancelled).Reduces damage received by 40% (cannot be cancelled).-5 to Strike Arts cost (cannot be cancelled).Effects reset when Tag Switching to \"Vegeta\".While this character is on the battlefield, applies the following effects to self when causing a character with a \"Revives when health reaches 0\" effect to revive:Increases own Dragon Balls by 2.Reduces enemy's Dragon Balls by 2."
+        },
+        {
+          "ability_name": "Ultimate Combination",
+          "ability_effect": "Reduces damage received by 20% until combo ends when changing cover.Evades enemy's attack if a cover change is performed against their Blast Arts attack (activates during assists).The following effects occur every time this character uses a Strike or Blast Arts:Restores own health by 3%.-3 to own Special Move Arts cost (activates five times) (cannot be cancelled).Inflicts all enemies with Attribute Downgrade \"+10% to Damage Received\" for 20 timer counts.The following effects occur when this character evades an enemy attack with a Vanishing Step:Draw a Special Arts Card next (activates once).Shortens allies' substitution counts by 1."
+        }
+      ],
+      "unique_zenkai_abilities": [
+        {
+          "ability_name": "Azure Guardians",
+          "ability_effect": "Applies the following effects to self when this character enters the battlefield via Tag Switch:+90% to damage inflicted (cannot be cancelled).+50% to Blast damage inflicted (cannot be cancelled).Reduces damage received by 40% (cannot be cancelled).-10 to Blast Arts cost (cannot be cancelled).Effects reset when Tag Switching to \"Goku\".While this character is on the battlefield, applies the following effects to self when causing a character with a \"Revives when health reaches 0\" effect to revive:Increases own Dragon Balls by 2.Reduces enemy's Dragon Balls by 2."
+        },
+        {
+          "ability_name": "Ultimate Combination",
+          "ability_effect": "Reduces damage received by 20% until combo ends when changing cover.Knocks enemy back to long range if a cover change is performed against their Strike Arts attack (activates during assists).[Comboable Arts]Special Move ArtsApplies the following effects to self every time this character uses a Strike or Blast Arts attack:Restores health by 3%.Restores Ki by 5.+20% to Ki Recovery (activates five times) (cannot be cancelled).While this character is on the battlefield, applies the following effects to self when enemy switches characters:Draw a Blast Arts Card next.Restores Ki by 20."
+        }
+      ]
+    },
+    "base_stats": {
+      "power": 10009,
+      "health": 24607,
+      "strike_atk": 2545,
+      "strike_def": 1615,
+      "blast_atk": 2545,
+      "blast_def": 1607
+    },
+    "max_stats": {
+      "power": 891009,
+      "health": 1503181,
+      "strike_atk": 155467,
+      "strike_def": 98675,
+      "blast_atk": 155467,
+      "blast_def": 98188
+    },
+    "strike": "Strike (Impact)",
+    "shot": "Blast (Impact)",
+    "image_url": "https://i.imgur.com/iFbMWA8.png",
+    "special_move": {
+      "name": "Cosmic Rush",
+      "effect": "Deals massive Impact damage.Applies the following effects to self upon activation:Restores Vanishing Gauge by 70%.Applies Attribute Upgrade \"-50% to enemy's 'Sustained Damage CUT' effects\" for 3 timer counts.Nullifies enemy's \"Restores own health when it reaches 0\" effects when this character attacks for 3 timer counts.*Blast Armor when charging forward."
+    },
+    "special_skill": {
+      "name": "Overflowing Valor",
+      "effect": "Draw a Special Move Arts Card next (activates once).Randomly destroys 1 enemy card.Reduces enemy Ki by 40.Restores own Ki by 25.+20% to Strike damage inflicted for 20 timer counts."
+    },
+    "z_ability": {
+      "one": {
+        "tags": ["Son Family", "Vegeta Clan"],
+        "effect": "+22% to \"Tag: Son Family\" or \"Tag: Vegeta Clan\" base Strike & Blast Attack during battle."
+      },
+      "two": {
+        "tags": ["Son Family", "Vegeta Clan"],
+        "effect": "+26% to \"Tag: Son Family\" or \"Tag: Vegeta Clan\" base Strike & Blast Attack during battle."
+      },
+      "three": {
+        "tags": [
+          "Son Family",
+          "Vegeta Clan",
+          "God Ki",
+          "Sagas From the Movies"
+        ],
+        "effect": "+30% to \"Tag: Son Family\", \"Tag: Vegeta Clan\", or \"Tag: God Ki\" base Strike & Blast Attack and +15% to \"Episode: Sagas From the Movies\" base Strike Defense during battle."
+      },
+      "four": {
+        "tags": [
+          "Son Family",
+          "Vegeta Clan",
+          "God Ki",
+          "Sagas From the Movies"
+        ],
+        "effect": "+35% to \"Tag: Son Family\", \"Tag: Vegeta Clan\", or \"Tag: God Ki\" base Strike & Blast Attack and +18% to \"Episode: Sagas From the Movies\" base Strike Defense during battle."
+      }
+    },
+    "is_lf": true,
+    "is_tag": false,
+    "has_zenkai": true
+  },
