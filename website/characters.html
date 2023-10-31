@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DB Legends Characters</title>
+  
+  <!-- Link stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <header>
+    <img src="/images/dblegends-logo.png" alt="Dragon Ball Legends">
+    <h1>Characters</h1>
+  </header>
+
+  <main>
+
+    <h2>All Characters</h2>
+
+    <!-- Container for character data -->
+    <div id="character-data"></div>
+
+    <!-- Load character data and display -->
+    <script>
+      fetch('/data/characters.json')
+        .then(response => response.json())
+        .then(data => {
+          let output = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+          document.getElementById('character-data').innerHTML = output;
+        })
+    </script>
+
+  </main>
+
+</body>
+</html>
