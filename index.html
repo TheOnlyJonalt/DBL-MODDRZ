@@ -2,24 +2,45 @@
 <html>
 <head>
   <title>Dragon Ball Legends API</title>
-  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
 </head>
+
 <body>
 
+  <!-- Animated background -->
+  <div class="animated-bg"></div>
+
+  <!-- Header -->
   <header>
-    <img src="/images/dblegends-logo.png" alt="Dragon Ball Legends">
-    <h1>Dragon Ball Legends API</h1>
+    <div class="container">
+      <img src="/images/dblegends-logo.png" alt="Dragon Ball Legends">
+      <h1>Dragon Ball Legends API</h1>
+    </div>
   </header>
 
-  <main>
-    <p>Welcome to the Dragon Ball Legends API! This API provides information on characters, items, events, and more from the Dragon Ball Legends game.</p>
+  <!-- Main content -->
+  <main class="container">
+    <div class="content">
+      <h2>Welcome!</h2>
+      <p>Access data on all your favorite Dragon Ball Legends characters, items, events, and more!</p>
 
-    <h2>Endpoints</h2>
-    <ul>
-      <li><a href="/characters">Characters</a> - Get full character info</li>
-      <li>Items - Coming soon!</li>
-      <li>Events - Coming soon!</li>
-    </ul>
+      <!-- Endpoint links -->
+      <h3>Endpoints:</h3>
+      <div class="endpoints">
+        <a href="/characters">Characters</a>
+        <a href="/items">Items</a>
+        <a href="/events">Events</a>
+      </div>
+    </div>
   </main>
 
 </body>
