@@ -1,45 +1,67 @@
-/* Style the header */
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* Colors */
+:root {
+  --primary: #333;
+  --secondary: #428bca;
+}
+
+/* Header */
 header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+  /* Flexbox layout */
   display: flex;
   align-items: center;
-  background-color: #333;
-  color: white;
-  padding: 20px;
 }
 
-header img {
-  height: 60px;
-  margin-right: 20px;
-}
-
-header h1 {
-  margin: 0;
-}
-
-/* Style main content container */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Style headings */
-h1, h2 {
-  color: #444;
-}
-
-/* Style links */
+/* Links */
 a {
-  color: #428bca;
+  color: var(--secondary);
   text-decoration: none;
+  transition: all 0.3s;
 }
 
-/* Style endpoint list */ 
-ul {
-  list-style: none; 
-  padding-left: 0;
+a:hover {
+  opacity: 0.8;
 }
 
-li {
-  margin-bottom: 10px;
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Background animation */ 
+.animated-bg {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  animation: animateBg 10s linear infinite;
+}
+
+@keyframes animateBg {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
