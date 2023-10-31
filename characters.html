@@ -1,36 +1,57 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html>
 <head>
   <title>DB Legends Characters</title>
-  
-  <!-- Link stylesheet -->
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
 
+  <!-- Header -->
   <header>
-    <img src="/images/dblegends-logo.png" alt="Dragon Ball Legends">
-    <h1>Characters</h1>
+    <div class="container">
+      <img src="/images/dblegends-logo.png" alt="Dragon Ball Legends">
+      <h1>Characters</h1>
+    </div>
   </header>
 
-  <main>
+  <!-- Search -->
+  <div class="character-search">
+    <input type="text" placeholder="Search characters...">
+  </div>
 
-    <h2>All Characters</h2>
+  <!-- Character grid -->
+  <main class="container">  
+    <div class="character-grid">
+      
+      <!-- Individual character card -->
+      <div class="character-card">
+        <img src="images/ssj4goku.png" alt="SSJ 4 Goku">
+        <h3>Goku</h3>
+        <p>Saiyan</p>
+        <a href="/characters/goku">View</a>
+      </div>
+      
+      <div class="character-card">
+        <img src="images/Goku&vegetassjb.png" alt="Super Saiyan God SS Goku and Vegeta Goku">
+        <h3>Goku</h3>
+        <p>Saiyan</p>
+        <a href="/characters/goku">View</a>
+      </div>
 
-    <!-- Container for character data -->
-    <div id="character-data"></div>
 
-    <!-- Load character data and display -->
-    <script>
-      fetch('/data/characters.json')
-        .then(response => response.json())
-        .then(data => {
-          let output = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
-          document.getElementById('character-data').innerHTML = output;
-        })
-    </script>
+    </div>
 
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="#">Previous</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">Next</a>
+    </div>
   </main>
 
 </body>
