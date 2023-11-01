@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Dragon Ball Legends API</title>
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  
+  <title>DB Legends Characters</title>
+
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Favicon -->
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-
+  <link rel="stylesheet" href="styles.css"> 
 </head>
 
 <body>
 
-  <!-- Animated background -->
-  <div class="animated-bg"></div>
-
-  <!-- Header -->
+  <!-- Header -->  
   <header>
     <div class="container">
-      <img src="/images/dblegends-logo.png" alt="Dragon Ball Legends">
-      <h1>Dragon Ball Legends API</h1>
+      <img src="images/dblegends-logo.png" alt="Dragon Ball Legends">
+      <h1>Characters</h1>    
     </div>
   </header>
 
-  <!-- Main content -->
-  <main class="container">
-    <div class="content">
-      <h2>Welcome!</h2>
-      <p>Access data on all your favorite Dragon Ball Legends characters, items, events, and more!</p>
+  <!-- Search -->
+  <div class="search">
+    <input type="text" placeholder="Search characters...">
+  </div>
 
-      <!-- Endpoint links -->
-      <h3>Endpoints:</h3>
-      <div class="endpoints">
-        <a href="/characters">Characters</a>
-        <a href="/items">Items</a>
-        <a href="/events">Events</a>
+  <!-- Character grid -->
+  <main class="container">
+
+    <div class="character-grid">
+
+      <!-- Character card -->
+      <div class="character-card">
+        <img src="images/characters/ssj4goku.png" alt="SSJ4 Goku">
+        <h3>Goku</h3>
+        <p>Saiyan</p>
+        <a href="#">View</a>
       </div>
+
+      <!-- More cards... -->
+
     </div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <a href="#">Prev</a>
+      <a href="#">1</a> 
+      <a href="#">2</a>
+      <a href="#">Next</a>
+    </div>
+
   </main>
 
 </body>
