@@ -1,0 +1,57 @@
+/* Dark theme colors */
+:root {
+  --primary: #222;
+  --secondary: #fff;
+}
+
+/* Basic styles */
+body {
+  background: var(--primary);
+  color: var(--secondary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--secondary);
+}
+
+/* Header */
+header {
+  padding: 20px;
+  border-bottom: 1px solid #444;
+}
+
+header img {
+  height: 60px;
+}
+
+/* Search */
+.search {
+  padding: 20px;
+}
+
+/* Character grid */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+/* Character card */
+.character-card {
+  background: #333;
+  padding: 20px;
+  border-radius: 4px;
+} 
+
+/* Pagination */  
+.pagination a {
+  padding: 8px 16px;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+}
+
+.pagination a:hover {
+  background: var(--secondary);
+  color: var(--primary); 
+}
