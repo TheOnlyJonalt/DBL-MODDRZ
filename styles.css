@@ -1,67 +1,57 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-/* Fonts */
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
-h1, h2, h3 {
-  font-weight: bold;
-}
-
-/* Colors */
+/* Dark theme colors */
 :root {
-  --primary: #333;
-  --secondary: #428bca;
+  --primary: #222;
+  --secondary: #fff;
+}
+
+/* Basic styles */
+body {
+  background: var(--primary);
+  color: var(--secondary);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: var(--secondary);
 }
 
 /* Header */
 header {
-  background-color: var(--primary);
-  color: white;
-  padding: 1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-
-  /* Flexbox layout */
-  display: flex;
-  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #444;
 }
 
-/* Links */
-a {
-  color: var(--secondary);
-  text-decoration: none;
-  transition: all 0.3s;
+header img {
+  height: 60px;
 }
 
-a:hover {
-  opacity: 0.8;
+/* Search */
+.search {
+  padding: 20px;
 }
 
-/* Layout */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Character grid */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-/* Background animation */ 
-.animated-bg {
-  position: fixed; 
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-  animation: animateBg 10s linear infinite;
+/* Character card */
+.character-card {
+  background: #333;
+  padding: 20px;
+  border-radius: 4px;
+} 
+
+/* Pagination */  
+.pagination a {
+  padding: 8px 16px;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
 }
 
-@keyframes animateBg {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+.pagination a:hover {
+  background: var(--secondary);
+  color: var(--primary); 
 }
