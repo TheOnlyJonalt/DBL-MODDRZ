@@ -19,19 +19,27 @@ h1, h2, p {
   padding-bottom: 10px;
 }
 
-.character-container {
+.character-img-container {
+  border: 5px solid var(--accent);
+  border-radius: 10px;
+  padding: 5px;
+  background-image: url("bg.png");
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-bottom: 30px;
+  margin: auto;
 }
 
 .character-img {
-  border: 2px solid var(--accent);
-  border-radius: 8px;
-  margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
+
 
 .rarity-img {
   width:  200px;
