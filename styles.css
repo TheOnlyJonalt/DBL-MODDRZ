@@ -34,18 +34,25 @@ h1 {
 
 /* Character card */
 .character {
-  background: #333;
+  background: var(--primary);
   padding: 20px;
   border-radius: 8px;
   color: var(--secondary);
   margin: 10px;
   border: 2px solid var(--accent);
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  width: 200px;
+}
+
+.character:hover {
+  transform: scale(1.1);
 }
 
 .character img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-bottom: 15px;
 }
@@ -54,4 +61,26 @@ h1 {
 .character-name {
   font-weight: bold;
   color: var(--accent);
+}
+
+/* Styling for the main and other headings */
+h1, h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+/* Styling for the main character attributes */
+.character-attributes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the individual character attributes */
+.character-attributes img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
 }
