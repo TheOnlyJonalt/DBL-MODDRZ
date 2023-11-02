@@ -34,7 +34,7 @@ h1, h2, p {
 }
 
 .rarity-img, .attribute-img {
-  width: 50px;
+  width: 100px;
   height: 50px;
   margin: 5px;
 }
